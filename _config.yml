@@ -1,0 +1,5 @@
+# _config.yml
+
+exclude:
+  - docs
+  - README.md
