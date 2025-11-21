@@ -15,7 +15,7 @@
 │  - 3차원 직교좌표계 (X, Y, Z)         │
 └────────────────────────────────────────┘
 ```
-<!-- 이미지 검색: "WGS84 coordinate system diagram" or "GPS geocentric coordinate system" -->
+> 🔍 **이미지 검색어**: `WGS84 coordinate system diagram` or `GPS geocentric coordinate system`
 
 ### WGS84가 만들어진 배경
 
@@ -31,7 +31,7 @@
 문제: 위성과 지상의 위치를 
       같은 기준으로 표현해야 함!
 ```
-<!-- 이미지 검색: "GPS satellite signal to ground station" or "satellite positioning system diagram" -->
+> 🔍 **이미지 검색어**: `GPS satellite signal to ground station` or `satellite positioning system diagram`
 
 2️⃣ **기존 좌표계의 한계**
 - 각 나라마다 다른 측지계 사용
@@ -48,7 +48,7 @@
 │ ✓ 정밀한 지구 타원체 정의           │
 └─────────────────────────────────────┘
 ```
-<!-- 이미지 검색: "WGS84 features characteristics" or "WGS84 global reference system" -->
+> 🔍 **이미지 검색어**: `WGS84 features characteristics` or `WGS84 global reference system`
 
 ### WGS84 좌표계의 구성 요소
 
@@ -68,7 +68,7 @@
   
   원점 = 지구의 무게중심
 ```
-<!-- 이미지 검색: "Earth geocenter mass center" or "geocentric origin diagram" -->
+> 🔍 **이미지 검색어**: `Earth geocenter mass center` or `geocentric origin diagram`
 
 - 위치: 지구의 질량중심
 - 정확도: 수 cm 이내로 결정
@@ -91,7 +91,7 @@
    Y축   |
 (서쪽 90°)
 ```
-<!-- 이미지 검색: "WGS84 XYZ axes cartesian coordinate" or "ECEF coordinate system 3D axes" -->
+> 🔍 **이미지 검색어**: `WGS84 XYZ axes cartesian coordinate` or `ECEF coordinate system 3D axes`
 
 ##### ① X축의 정의
 
@@ -109,7 +109,7 @@
 ↑
 X축 (경도 0°, 위도 0°)
 ```
-<!-- 이미지 검색: "prime meridian equatorial plane X axis" or "Greenwich meridian equator intersection" -->
+> 🔍 **이미지 검색어**: `prime meridian equatorial plane X axis` or `Greenwich meridian equator intersection`
 
 **핵심 포인트**:
 - **본초자오선**: 국제시보국(BIH)에서 정의
@@ -133,7 +133,7 @@ X축 (경도 0°, 위도 0°)
   
   예: 인도양 방향
 ```
-<!-- 이미지 검색: "Y axis 90 degrees east longitude" or "right-hand coordinate system XYZ earth" -->
+> 🔍 **이미지 검색어**: `Y axis 90 degrees east longitude` or `right-hand coordinate system XYZ earth`
 
 **핵심 포인트**:
 - **X축에서 동쪽으로 90°** 회전
@@ -158,7 +158,7 @@ X축 (경도 0°, 위도 0°)
       ●
     남극점
 ```
-<!-- 이미지 검색: "CTP conventional terrestrial pole Z axis" or "Earth rotation axis polar motion" -->
+> 🔍 **이미지 검색어**: `CTP conventional terrestrial pole Z axis` or `Earth rotation axis polar motion`
 
 **CTP (Conventional Terrestrial Pole)란?**
 - 지구 자전축의 평균 위치
@@ -194,7 +194,7 @@ a = 6,378,137 m
 
 편평률 f = (a-b)/a ≈ 1/298.26
 ```
-<!-- 이미지 검색: "WGS84 ellipsoid parameters semi-major axis" or "Earth ellipsoid flattening diagram" -->
+> 🔍 **이미지 검색어**: `WGS84 ellipsoid parameters semi-major axis` or `Earth ellipsoid flattening diagram`
 
 **왜 타원체인가?**
 - 지구는 완전한 구가 아님
@@ -218,7 +218,7 @@ a = 6,378,137 m
     ↓
 WGS84에 반영
 ```
-<!-- 이미지 검색: "EGM Earth Gravitational Model" or "geoid gravity field measurement" -->
+> 🔍 **이미지 검색어**: `EGM Earth Gravitational Model` or `geoid gravity field measurement`
 
 **왜 중력장이 중요한가?**
 - GPS 위성의 궤도 계산에 필수
@@ -246,7 +246,7 @@ WGS84에 반영
 ✓ 전 세계 공통          ✗ 지역마다 다름
 ✓ GPS와 호환            ✗ 변환 필요
 ```
-<!-- 이미지 검색: "geocentric vs local geodetic datum" or "WGS84 vs regional coordinate system" -->
+> 🔍 **이미지 검색어**: `geocentric vs local geodetic datum` or `WGS84 vs regional coordinate system`
 
 #### 전 지구적 기준
 
@@ -293,7 +293,7 @@ GPS 위성 (WGS84 좌표)
   
 φ: 위도, λ: 경도, h: 타원체고
 ```
-<!-- 이미지 검색: "GPS trilateration satellites receiver" or "GPS positioning principle diagram" -->
+> 🔍 **이미지 검색어**: `GPS trilateration satellites receiver` or `GPS positioning principle diagram`
 
 #### 좌표 변환
 
@@ -308,7 +308,7 @@ WGS84 좌표 (GPS 측정)
 지역 좌표계
 (예: 한국 TM, UTMK)
 ```
-<!-- 이미지 검색: "datum transformation parameters" or "coordinate system conversion 7-parameter" -->
+> 🔍 **이미지 검색어**: `datum transformation parameters` or `coordinate system conversion 7-parameter`
 
 **변환이 필요한 이유:**
 - 기존 지도는 지역 측지계 사용
@@ -352,7 +352,7 @@ WGS84 좌표 (GPS 측정)
 │   (북극 방향)                       │
 └─────────────────────────────────────┘
 ```
-<!-- 이미지 검색: "WGS84 axes definition summary" or "ECEF coordinate axes orientation" -->
+> 🔍 **이미지 검색어**: `WGS84 axes definition summary` or `ECEF coordinate axes orientation`
 
 #### 암기 포인트
 
@@ -409,7 +409,7 @@ WGS84 타원체
     ↓
 WGS84 좌표계 완성
 ```
-<!-- 이미지 검색: "WGS84 development process geodetic survey" or "global geodetic observation network" -->
+> 🔍 **이미지 검색어**: `WGS84 development process geodetic survey` or `global geodetic observation network`
 
 **근거**:
 - 수십 년간의 전 지구적 측정 데이터 사용
@@ -435,7 +435,7 @@ WGS84 좌표계 완성
  ↑
 X축 (경도 0°, 위도 0°)
 ```
-<!-- 이미지 검색: "BIH prime meridian X axis definition" or "Greenwich meridian equatorial plane" -->
+> 🔍 **이미지 검색어**: `BIH prime meridian X axis definition` or `Greenwich meridian equatorial plane`
 
 **해석**:
 - **본초자오선**: BIH에서 정의한 경도 0° 자오선
@@ -470,7 +470,7 @@ X축 (경도 0°, 위도 0°)
      ↘  |
     Y축 (동쪽 90°) ← 맞음!
 ```
-<!-- 이미지 검색: "right-hand rule coordinate system" or "Y axis east direction 90 degrees" -->
+> 🔍 **이미지 검색어**: `right-hand rule coordinate system` or `Y axis east direction 90 degrees`
 
 **왜 틀렸는가?**
 
@@ -490,7 +490,7 @@ X축 (경도 0°, 위도 0°)
 만약 Y축이 서쪽이면?
 → 왼손 좌표계가 됨 (잘못된 체계)
 ```
-<!-- 이미지 검색: "right-hand coordinate system fingers" or "right-hand rule 3D coordinates" -->
+> 🔍 **이미지 검색어**: `right-hand coordinate system fingers` or `right-hand rule 3D coordinates`
 
 3️⃣ **실제 위치**
 
@@ -522,7 +522,7 @@ X축 (경도 0°, 위도 0°)
       ●
     남극점
 ```
-<!-- 이미지 검색: "CTP conventional terrestrial pole diagram" or "mean rotational axis Earth" -->
+> 🔍 **이미지 검색어**: `CTP conventional terrestrial pole diagram` or `mean rotational axis Earth`
 
 **CTP란?**
 - **Conventional Terrestrial Pole**: 협정 지구극
@@ -563,7 +563,7 @@ WGS84 좌표축 (오른손 법칙)
     
 ※ Y축은 반드시 "동쪽"!
 ```
-<!-- 이미지 검색: "WGS84 right-hand rule mnemonic" or "ECEF coordinate system orientation" -->
+> 🔍 **이미지 검색어**: `WGS84 right-hand rule mnemonic` or `ECEF coordinate system orientation`
 
 **자주 나오는 함정**:
 - "서쪽으로 90°" → 틀림! ❌
