@@ -4,6 +4,7 @@
 
 **GNSS** (Global Navigation Satellite System)는 위성을 이용하여 지구상의 위치를 측정하는 시스템입니다.
 
+**[이미지 검색어]** `GNSS satellite constellation positioning system diagram`
 ```bash
 🛰️ 🛰️ 🛰️ 🛰️ 위성들
     ↓  ↓  ↓  ↓
@@ -23,6 +24,7 @@
 
 **기본 원리**: 위성까지의 거리를 측정하여 위치를 계산
 
+**[이미지 검색어]** `GPS trilateration 4 satellites positioning principle`
 ```bash
 최소 4개 위성 필요:
 - 3개 위성: X, Y, Z 좌표 계산
@@ -64,6 +66,7 @@ GNSS 위성은 두 가지 방식으로 거리를 측정할 수 있는 신호를 
 **개념:**
 위성이 송신하는 **특정 코드 패턴**과 수신기가 생성한 같은 패턴을 비교하여 시간 지연을 측정
 
+**[이미지 검색어]** `GPS code pseudorange measurement correlation`
 ```bash
 위성: [1010011...] 코드 패턴 송신
         ↓ 전파 전달
@@ -92,8 +95,9 @@ GNSS 위성은 두 가지 방식으로 거리를 측정할 수 있는 신호를 
 #### 반송파 측정 (Carrier Phase Measurement)
 
 **개념:**
-위성이 송신하는 **반송파의 위상(phase)**을 측정하여 거리를 계산
+위성이 송신하는 <strong>반송파의 위상(phase)</strong>을 측정하여 거리를 계산
 
+**[이미지 검색어]** `carrier phase measurement integer ambiguity GNSS`
 ```bash
 반송파 = 정현파 (사인파)
 
@@ -141,6 +145,7 @@ GNSS 위성은 두 가지 방식으로 거리를 측정할 수 있는 신호를 
 
 전리층은 전파의 **굴절률**을 변화시킵니다.
 
+**[이미지 검색어]** `ionospheric delay group velocity phase velocity GNSS`
 ```bash
 ☁️ 전리층 ☁️
    ↓ 그룹 속도   ↓ 위상 속도
@@ -168,6 +173,7 @@ L2 반송파 지연: -12m
 
 **3) 다중경로 오차**
 
+**[이미지 검색어]** `GNSS multipath error signal reflection diagram`
 ```bash
 직접 신호:
 🛰️ ────────→ 📍
@@ -212,6 +218,7 @@ L2 반송파 지연: -12m
 
 #### 개념
 
+**[이미지 검색어]** `integer ambiguity carrier phase wavelength cycles`
 ```bash
 수신기가 위상차는 측정할 수 있지만,
 전체 파장 개수는 알 수 없음!
@@ -244,6 +251,8 @@ L2 반송파 지연: -12m
 ```
 
 **2) 상대측위: 가능!**
+
+**[이미지 검색어]** `GNSS ambiguity resolution differential positioning`
 ```bash
 📍 기준국     📍 이동국
    ↓           ↓
@@ -276,6 +285,8 @@ L2 반송파 지연: -12m
 ```
 
 **RTK에서의 미지정수 결정:**
+
+**[이미지 검색어]** `RTK ambiguity resolution float fix solution`
 ```bash
 시간: 0초 ──→ 30초 ──→ 60초
      [초기화]  [탐색]   [Fix ✅]
@@ -320,6 +331,7 @@ GNSS 고정밀 측위의 핵심 기술!
 **개념:**
 두 수신기가 **하나의 위성**을 동시 관측하여 차분
 
+**[이미지 검색어]** `single difference GNSS two receivers one satellite`
 ```bash
 🛰️ 위성 A
  ↓     ↓
@@ -356,6 +368,7 @@ GNSS 고정밀 측위의 핵심 기술!
 **개념:**
 두 수신기가 **두 개의 위성**을 동시 관측하여 이중 차분
 
+**[이미지 검색어]** `double difference GNSS two satellites two receivers`
 ```bash
 🛰️A        🛰️B
  ↓  ↓      ↓  ↓
@@ -393,6 +406,7 @@ GNSS 고정밀 측위의 핵심 기술!
 **개념:**
 이중차분을 **두 시간**에 걸쳐 수행하고 차분
 
+**[이미지 검색어]** `triple difference GNSS time epochs cycle slip detection`
 ```bash
 시간 t₁:        시간 t₂:
 🛰️A  🛰️B      🛰️A  🛰️B
@@ -480,6 +494,7 @@ GNSS 고정밀 측위의 핵심 기술!
 #### 개념
 **하나의 수신기**만을 사용하여 위성 신호를 직접 수신하고 위치를 계산하는 가장 기본적인 방법입니다.
 
+**[이미지 검색어]** `absolute positioning single point positioning SPP GNSS`
 ```bash
 🛰️ 🛰️ 🛰️ 🛰️ 위성
     ↓  ↓  ↓  ↓
@@ -508,6 +523,7 @@ GNSS 고정밀 측위의 핵심 기술!
 
 단독측위는 다양한 오차의 영향을 받습니다:
 
+**[이미지 검색어]** `GNSS error sources satellite signal propagation`
 ```bash
 🛰️ 위성
  │
@@ -587,6 +603,7 @@ GNSS 고정밀 측위의 핵심 기술!
 #### 개념
 <strong>기지점(좌표를 아는 점)</strong>과 <strong>미지점(측정하려는 점)</strong>에서 **동시에** 관측하여, 기지점의 오차를 이용해 미지점의 오차를 보정하는 방법입니다.
 
+**[이미지 검색어]** `differential GPS DGPS base station rover correction`
 ```bash
 🛰️ 🛰️ 🛰️ 🛰️ 위성 (동일한 위성)
  ↓  ↓  ↓  ↓       ↓  ↓  ↓  ↓
@@ -600,6 +617,7 @@ GNSS 고정밀 측위의 핵심 기술!
 
 **핵심 아이디어**: 가까운 곳에서는 **같은 오차**가 발생한다!
 
+**[이미지 검색어]** `DGPS error cancellation common mode ionospheric delay`
 ```bash
 전리층 지연 영향:
    ☁️ 전리층 ☁️
@@ -761,6 +779,7 @@ DGPS:           ±0.5~2m
 #### 개념
 <strong>기준국(Base Station)</strong>은 고정하고, <strong>이동국(Rover)</strong>은 이동하면서 **연속적으로** 위치를 측정하는 방법입니다.
 
+**[이미지 검색어]** `kinematic GNSS survey base rover continuous positioning`
 ```bash
 📍 기준국 (고정)
 🛰️│🛰️│🛰️│🛰️ 동일 위성 계속 수신
@@ -776,6 +795,7 @@ DGPS:           ±0.5~2m
 <strong>사이클 슬립(Cycle Slip)</strong>이란?
 위성 신호가 끊겨서 위상(Phase) 추적이 중단되는 현상
 
+**[이미지 검색어]** `cycle slip carrier phase loss of lock signal obstruction`
 ```bash
 정상 신호:
 🛰️ ━━━━━━━━━━━━━━━━ 📍
@@ -930,6 +950,7 @@ DGPS:           ±0.5~2m
 #### 개념
 <strong>여러 개의 기준국(상시관측소)</strong>이 네트워크를 구성하여, 이동국 주변의 오차를 **정밀하게 모델링**하여 실시간으로 보정하는 최신 기술입니다.
 
+**[이미지 검색어]** `network RTK VRS virtual reference station CORS`
 ```bash
 기존 RTK (단일 기준국):
     📍 기준국 1개
@@ -976,6 +997,8 @@ DGPS:           ±0.5~2m
 ```
 
 **3) 가상기준점 (VRS: Virtual Reference Station)**
+
+**[이미지 검색어]** `VRS virtual reference station network RTK interpolation`
 ```bash
 실제 기준국: 
 📍A ────30km──── 📍B
@@ -1153,6 +1176,7 @@ DGPS:           ±0.5~2m
 **개념:**
 수신기를 **고정**하여 **장시간** 관측하는 가장 정밀한 방법
 
+**[이미지 검색어]** `static GNSS survey long observation session mm accuracy`
 ```bash
 🛰️ 🛰️ 🛰️ 🛰️
  ↓  ↓  ↓  ↓
@@ -1245,6 +1269,7 @@ DGPS:           ±0.5~2m
 **개념:**
 정적측량과 같지만 **관측 시간을 단축**한 방법
 
+**[이미지 검색어]** `rapid static fast static GNSS multi-frequency survey`
 ```bash
 정적측량:      1~4시간
               ████████
@@ -1295,6 +1320,7 @@ DGPS:           ±0.5~2m
 **개념:**
 단일 기준국을 사용한 **실시간** 측량
 
+**[이미지 검색어]** `RTK real-time kinematic single base station radio link`
 ```bash
 📍 기준국 (직접 설치)
    ↓ 📡 무선 통신 (실시간)
@@ -1332,6 +1358,7 @@ DGPS:           ±0.5~2m
 **개념:**
 **단일 수신기**만 사용하지만, **정밀 궤도/시계 정보**를 활용하여 높은 정확도를 얻는 방법
 
+**[이미지 검색어]** `PPP precise point positioning IGS precise orbit clock`
 ```bash
 기존 단독측위:
 🛰️ 일반 궤도 정보 (오차 수 m)
@@ -1392,6 +1419,7 @@ PPP:
 **개념:**
 **정지궤도 위성**을 통해 보정 정보를 송신하는 시스템
 
+**[이미지 검색어]** `SBAS satellite based augmentation system WAAS EGNOS`
 ```bash
     🛰️ 정지궤도 위성 (SBAS)
        (보정 정보 방송)
@@ -1445,6 +1473,7 @@ PPP:
 
 ### 4.1 정확도 비교
 
+**[이미지 검색어]** `GNSS positioning methods accuracy comparison chart`
 ```bash
 단독측위:           ±3~10m
                    ████████████████████
